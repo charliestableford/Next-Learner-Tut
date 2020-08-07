@@ -9,14 +9,12 @@ export default function Home() {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <p>This is sample text.</p>
-        <p>
-          (This is a sample website - you’ll be building a site like this on{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p>
+      <section>
+        <Link href="/posts/first-post" className="link"><a>About</a></Link>
+        <Link href="/posts/second-post" className="link"><a>Work</a></Link>
+        <p>This is an example site. I am learning Next.js. So if you want to learn it as well you should go to <a href="https://nextjs.org/">their site. </a></p>
       </section>
-      Play <Link href="/posts/first-post"><a>a game!</a></Link>
+      
     </Layout>
   )
 }
